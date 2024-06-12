@@ -20,3 +20,4 @@ let recurFibonacci  =(n)=>{
     return recurFibonacci(n-1)+recurFibonacci(n-2);
 }
 console.log(recurFibonacci(9));
+//* 0 1 1 2 3 5 8 13 21 34
