@@ -37,18 +37,7 @@ str = "Ahello";
 console.log(countVowels(str));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+//*2nd method:-
 
 // const countVowels = (str,strLength = str.length)=>{
 //     console.log(str.substring(0,strLength));
