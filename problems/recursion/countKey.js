@@ -15,11 +15,11 @@ const recursiveCountKey = (arr,key,index=0)=>{
         return 0;
     }
     if(arr[index]===key){
-        console.log(arr[index])
-        return 1+recursiveCountKey(arr,key,index++);
+        console.log(arr[index]);
+        return 1+recursiveCountKey(arr,key,++index);
     }else{
         console.log("count")
-        return 0+recursiveCountKey(arr,key,index++);
+        return 0+recursiveCountKey(arr,key,++index);
     }
 }
 let arr = [2,4,6,7,8,2,6,7,2];

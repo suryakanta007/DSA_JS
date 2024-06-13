@@ -16,7 +16,7 @@ function removeAdjDup(inputString){
     }
     return result;
 }
-console.log(removeAdjDup("aabbc"));
+// console.log(removeAdjDup("aabbc"));
 
 //* rcursive approch:-
 //TODO solve a problem where we need to delete same adjacent element.
@@ -31,19 +31,20 @@ const recursiveRemoveAD = (string)=>{
    }
     return firstChar+recursiveRemoveAD(restOfString);
 }
-// console.log(recursiveRemoveAD("aabcc"));
+console.log(recursiveRemoveAD("aabcc"));
 
 
 //*2nd method.
 
 // const recursiveRemoveAD = (inputString)=>{//todo resolvo the error problem.
 //     if(inputString.length==1){
-//         return inputString
+//         return inputString;
 //     }
+//     // console.log(inputString.length);
 //     if(inputString[0]===inputString[1]){
 //        return recursiveRemoveAD(inputString.substring(1));
 //     }
-//     return recursiveRemoveAD(inputString[0]+recursiveRemoveAD(inputString.substring(1)));
+//     return inputString[0]+recursiveRemoveAD(recursiveRemoveAD(inputString.substring(1)));
 // }
 // console.log(recursiveRemoveAD("aabcc"));
 
