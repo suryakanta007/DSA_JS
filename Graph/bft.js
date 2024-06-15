@@ -1,8 +1,8 @@
-//TODO Discuss about edge case .
+
 const graph = {
     a: ["b", "c"],
-    b: ["a", "c", "d"],//? from here cut a
-    c: [ "a","b", "d"],//? from here cut a
+    b: [ "c", "d"],//? from here cut a
+    c: [ "b", "d"],//? from here cut a  //out b,c,a,d,f,e
     d: ["b", "c","f"],
     e: ["f"],
     f: ["e"],
@@ -12,9 +12,9 @@ const graph = {
     let queue = [start];
     while(queue.length>0){
         const node = queue.shift();
-        // if(!visited.has(node)){
-        //     visited.add(node)
-        // }
+        if(!visited.has(node)){
+            visited.add(node)
+        }
         for(let neighbour of graph[node]){
             if(!visited.has(neighbour)){
                 visited.add(neighbour);
