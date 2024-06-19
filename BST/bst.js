@@ -117,7 +117,7 @@ BinarySearchTree.prototype.postOrder = function(node,result){
     result.push(node.key);
   }
 }
-//TODO After complite recursion make the tree of the  in-pre-post traverse.
+
 
 
 
