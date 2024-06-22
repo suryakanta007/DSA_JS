@@ -144,5 +144,5 @@ const firstList = new LinkedList();
 firstList.insertAtBeginning(5);
 firstList.insertAtEnd(7);
 firstList.printList();
-firstList.insertAtAnyPoint(firstList.search(5),6);
+firstList.deleteWithKey(7);
 firstList.printList();
