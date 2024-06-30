@@ -48,20 +48,18 @@ console.log("DFS Give:" + findPath(graph, "a", "e"));
 //* using BFS:-
 const isPathFind = function (graph, start, dest) {
   let queue = [start];
-  let visited = new Set();
+  let visited = new Set(start);//here we need to add the start point in to the visited. 
   while (queue.length > 0) {
     let node = queue.shift();
     if (node === dest) {
       return true;
     }
-    if (!visited.has(node)) {
-      visited.add(node);
       for (let neighbour of graph[node]) {
         if (!visited.has(neighbour)) {
+          visited.add(neighbour);
           queue.push(neighbour);
         }
       }
-    }
   }
   return false;
 };
